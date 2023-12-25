@@ -52,11 +52,11 @@ patch -p2 --forward --directory=asterisk-20.5.0 <asterisk.patch
 ```bash
 cd asterisk-20.5.0/
 
-export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:/opt/asterisk/lib/pkgconfig"
-export CFLAGS="-I/usr/local/include -I/opt/asterisk/include"
+export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
+export CFLAGS="-I/usr/local/include"
 export LDFLAGS="-L/usr/local/lib -L/opt/asterisk/lib"
 
-./configure --prefix=/opt/asterisk --without-pjproject-bundled --with-pjproject --without-iodbc --with-unixodbc=/usr/local/opt/unixodbc/lib --with-sqlite3=/usr/local/opt/sqlite/lib
+./configure --prefix=/usr/local --without-pjproject-bundled --with-pjproject --without-iodbc --with-unixodbc=/usr/local/opt/unixodbc/lib --with-sqlite3=/usr/local/opt/sqlite/lib
 
 make menuselect
 make && make install
