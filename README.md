@@ -54,7 +54,7 @@ cd asterisk-20.5.0/
 
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
 export CFLAGS="-I/usr/local/include"
-export LDFLAGS="-L/usr/local/lib -L/opt/asterisk/lib"
+export LDFLAGS="-L/usr/local/lib"
 
 ./configure --prefix=/usr/local --without-pjproject-bundled --with-pjproject --without-iodbc --with-unixodbc=/usr/local/opt/unixodbc/lib --with-sqlite3=/usr/local/opt/sqlite/lib
 
