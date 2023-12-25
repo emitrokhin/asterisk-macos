@@ -7,22 +7,22 @@
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>DYLD_FALLBACK_LIBRARY_PATH</key>
-		<string>/opt/sangoma/lib</string>
+		<string>/opt/asterisk/lib</string>
 	</dict>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/opt/sangoma/sbin/asterisk</string>
+		<string>/opt/asterisk/sbin/asterisk</string>
 		<string>-f</string>
 		<string>-q</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>WorkingDirectory</key>
-	<string>/opt/sangoma</string>
+	<string>/opt/asterisk</string>
 	<key>StandardErrorPath</key>
-	<string>/opt/sangoma/var/log/asterisk.err.log</string>
+	<string>/opt/asterisk/var/log/asterisk.err.log</string>
 	<key>StandardOutPath</key>
-	<string>/opt/sangoma/var/log/asterisk.out.log</string>
+	<string>/opt/asterisk/var/log/asterisk.out.log</string>
 	<key>HardResourceLimits</key>
 	<dict>
 		<key>NumberOfFiles</key>
