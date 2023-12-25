@@ -59,7 +59,7 @@ export LDFLAGS="-L/usr/local/lib"
 ./configure --prefix=/usr/local --without-pjproject-bundled --with-pjproject --without-iodbc --with-unixodbc=/usr/local/opt/unixodbc/lib --with-sqlite3=/usr/local/opt/sqlite/lib
 
 make menuselect
-make && make install
+make && make install && make config
 ```
 Note: During make menuselect I disable res_geolocation and res_prometheus as I had some issues with that.
 
